@@ -1,0 +1,151 @@
+// FONT
+// Plus Jakarta Sans
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+// COLORS
+// primary
+$c-Red: hsl(1, 90%, 64%);
+$c-Blue: hsl(219, 85%, 26%);
+
+// neutral
+$c-White: hsl(0, 0%, 100%);
+$c-Very-light-grayish-blue: hsl(210, 60%, 98%);
+$c-Light-grayish-blue-1: hsl(211, 68%, 94%);
+$c-Light-grayish-blue-2: hsl(205, 33%, 90%);
+$c-Grayish-blue: hsl(219, 14%, 63%);
+$c-Dark-grayish-blue: hsl(219, 12%, 42%);
+$c-Very-dark-blue: hsl(224, 21%, 14%);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Plus Jakarta Sans";
+	font-size: 16px;
+	background-color: $c-Light-grayish-blue-2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+
+	.header, main, footer {
+		padding: 20px;
+		max-width: 600px;
+	}
+
+	.header, main {
+		background-color: $c-White;
+	}
+
+	.header {
+		font-size: 0.6em;
+		display: flex;
+		justify-content: space-between !important;
+
+		span {
+			background-color: $c-Blue;
+			color: $c-White;
+			font-size: 0.8em;
+			padding: 5px 12px;
+			border-radius: 7px;
+		}
+
+		button {
+			background-color: $c-White;
+			border: none;
+			color: $c-Dark-grayish-blue;
+			cursor: pointer;
+		}
+
+		button:hover {
+			color: $c-Blue;
+		}
+	}
+
+	main {
+		border-radius: 15px;
+
+		ul {
+			font-size: 0.9em;
+			color: $c-Dark-grayish-blue;
+
+			a {
+				color: $c-Dark-grayish-blue;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			.bold {
+				font-weight: 800;
+				color: $c-Very-dark-blue;
+			}
+			
+			.unread {
+				background-color: $c-Very-light-grayish-blue;
+			}
+
+			li {
+				display: flex;
+				padding: 10px;
+				margin: 15px 0;
+				border-radius: 15px;
+
+				.club {
+					color: $c-Blue;
+				}
+
+				.time {
+					color: $c-Grayish-blue;
+					padding-top: 5px;
+					width: 100%;
+				}
+
+				.text-content {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					padding-left: 15px;
+
+					.notif {
+						width: 60%;
+						flex-grow: 1;
+					}
+
+					.red-dot {
+						color: $c-Red;
+						padding-left: 5px;
+						font-size: 5px;
+					}
+
+				}
+
+				img {
+					width: 36px;
+					height: 36px;
+				}
+
+				.message {
+					margin-top: 10px;
+					padding: 15px;
+					border: 1px solid $c-Light-grayish-blue-1;
+					border-radius: 5px;
+				}
+
+				.picture-reaction {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and(min-width: 600px) {
+	footer {
+		position: absolute;
+		bottom: 0;
+	}
+}

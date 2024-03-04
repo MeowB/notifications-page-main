@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  background-color: #dde7ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+body .header, body main, body footer {
+  padding: 20px;
+  max-width: 600px;
+}
+body .header, body main {
+  background-color: white;
+}
+body .header {
+  font-size: 0.6em;
+  display: flex;
+  justify-content: space-between !important;
+}
+body .header span {
+  background-color: #0a317b;
+  color: white;
+  font-size: 0.8em;
+  padding: 5px 12px;
+  border-radius: 7px;
+}
+body .header button {
+  background-color: white;
+  border: none;
+  color: #5e6778;
+  cursor: pointer;
+}
+body .header button:hover {
+  color: #0a317b;
+}
+body main {
+  border-radius: 15px;
+}
+body main ul {
+  font-size: 0.9em;
+  color: #5e6778;
+}
+body main ul a {
+  color: #5e6778;
+  font-weight: bold;
+  text-decoration: none;
+}
+body main ul .bold {
+  font-weight: 800;
+  color: #1c202b;
+}
+body main ul .unread {
+  background-color: #f7fafd;
+}
+body main ul li {
+  display: flex;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 15px;
+}
+body main ul li .club {
+  color: #0a317b;
+}
+body main ul li .time {
+  color: #939dae;
+  padding-top: 5px;
+  width: 100%;
+}
+body main ul li .text-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 15px;
+}
+body main ul li .text-content .notif {
+  width: 60%;
+  flex-grow: 1;
+}
+body main ul li .text-content .red-dot {
+  color: #f65351;
+  padding-left: 5px;
+  font-size: 5px;
+}
+body main ul li img {
+  width: 36px;
+  height: 36px;
+}
+body main ul li .message {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #e5effa;
+  border-radius: 5px;
+}
+body main ul li .picture-reaction {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
