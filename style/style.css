@@ -7,7 +7,6 @@
 body {
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
-  background-color: #dde7ee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,9 +80,20 @@ body main ul li .text-content {
   align-items: center;
   padding-left: 15px;
 }
+body main ul li .text-content .message:hover {
+  background-color: #e5effa;
+  cursor: pointer;
+}
 body main ul li .text-content .notif {
   width: 60%;
   flex-grow: 1;
+}
+body main ul li .text-content .notif a:first-child {
+  color: #1c202b;
+}
+body main ul li .text-content .notif a:first-child:hover {
+  color: #0a317b;
+  cursor: pointer;
 }
 body main ul li .text-content .red-dot {
   color: #f65351;
@@ -105,9 +115,13 @@ body main ul li .picture-reaction {
 }
 
 @media only screen and (min-width: 600px) {
-  footer {
+  body {
+    background-color: #dde7ee;
+  }
+  body footer {
     position: absolute;
     bottom: 0;
+    padding: 0;
   }
 }
 

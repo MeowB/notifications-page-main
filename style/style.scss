@@ -24,7 +24,6 @@ $c-Very-dark-blue: hsl(224, 21%, 14%);
 body {
 	font-family: "Plus Jakarta Sans";
 	font-size: 16px;
-	background-color: $c-Light-grayish-blue-2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -109,9 +108,23 @@ body {
 					align-items: center;
 					padding-left: 15px;
 
+					.message:hover {
+						background-color: $c-Light-grayish-blue-1;
+						cursor: pointer;
+					}
+
 					.notif {
 						width: 60%;
 						flex-grow: 1;
+
+						a:first-child {
+							color: $c-Very-dark-blue;
+						}
+
+						a:first-child:hover {
+							color: $c-Blue;
+							cursor: pointer;
+						}
 					}
 
 					.red-dot {
@@ -144,8 +157,13 @@ body {
 }
 
 @media only screen and(min-width: 600px) {
-	footer {
-		position: absolute;
-		bottom: 0;
+	body {
+		background-color: $c-Light-grayish-blue-2;
+		footer {
+			position: absolute;
+			bottom: 0;
+			padding: 0;
+		}
 	}
+	
 }
